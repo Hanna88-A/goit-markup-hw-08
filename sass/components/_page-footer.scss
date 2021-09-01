@@ -1,0 +1,46 @@
+/* Подвал сайта */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $secondary-bg-color;
+}
+.footer-container {
+  display: flex;
+}
+.address-box {
+  margin-right: 70px;
+}
+.address-box__logo {
+  display: block;
+  margin-bottom: 20px;
+
+  color: $white-text;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.address-box__list {
+  @extend %list;
+}
+
+.address-box__list:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address-box__link {
+  color: $white-text;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.address-box__link--transparent {
+  color: $transparent-text;
+}

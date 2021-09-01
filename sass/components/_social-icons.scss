@@ -1,0 +1,80 @@
+.social-icons {
+  @include centeredFlex();
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons__link {
+  @include centeredFlex();
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social-icons__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: $icons-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .social-icons__link:hover > &,
+  .social-icons__link:focus > & {
+    fill: $icons-white-color;
+  }
+}
+
+.social-icons__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Ссылки футера на социальные сети */
+.icons-footer {
+  padding-top: 12px;
+}
+.icons-footer__text {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-text;
+}
+.icons-footer__list {
+  @include centeredFlex();
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icons-footer__link {
+  @include centeredFlex();
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icons-footer__link:hover,
+.icons-footer__link:focus {
+  background-color: $accent-color;
+}
+.icons-footer__item:not(:last-child) {
+  margin-right: 10px;
+}
+.icons-footer__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: $icons-white-color;
+}

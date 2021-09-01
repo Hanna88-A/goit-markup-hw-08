@@ -1,0 +1,92 @@
+/* Форма подписки*/
+.form-subscription {
+  display: block;
+  margin-left: auto;
+}
+.form-subscription__text {
+  display: block;
+  padding-top: 12px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-text;
+}
+.form-subscription__box {
+  display: flex;
+}
+.form-subscription__emeil {
+  position: relative;
+  display: flex;
+}
+
+.form-subscription__label {
+  display: block;
+  position: absolute;
+
+  padding: 15px 0 15px 16px;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .form-subscription__input:focus ~ & {
+    opacity: 0;
+  }
+}
+
+.form-subscription__input {
+  margin-right: 12px;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: inherit;
+  outline: none;
+  color: $white-text;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.form-subscription__button {
+  @include centeredFlex();
+  cursor: pointer;
+  padding: 0;
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87x;
+  letter-spacing: 0.06em;
+  color: $white-text;
+
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: $accent-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $primary-button-hover;
+    border-color: $primary-button-hover;
+  }
+}
+
+.form-subscription__icon {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}

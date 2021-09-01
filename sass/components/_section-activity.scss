@@ -1,0 +1,38 @@
+.section-activity {
+  padding-top: 0;
+}
+.section-activity__list {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-activity__item {
+  margin-right: 30px;
+  position: relative;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.section-activity__image {
+  display: block;
+}
+
+.section-activity__box {
+  position: absolute;
+  @include centeredFlex();
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+}
+.section-activity__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-text;
+}
