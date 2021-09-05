@@ -18,12 +18,15 @@
         <div class="container page-header__container"> 
             <nav class="page-header__nav">
                 <a href="" class="page-header__logo"> <span class="logo-accent">Web</span>Studio</a>
+                
                 <ul class="site-nav">
                     <li class="item site-nav__item"><a href="./index.html" class="link site-nav__link site-nav__link--current">Студия</a></li>
                     <li class="item site-nav__item"><a href="./portfolio.html" class="link site-nav__link">Портфолио</a></li>
                     <li class="item site-nav__item"><a href="" class="link site-nav__link">Контакты</a></li>
                 </ul>
+                
             </nav>
+
             <ul class="site-contacts">
                 <li class="item site-contacts__item">
                     <a href="mailto:info@devstudio.com" class="link site-contacts__link">
@@ -43,8 +46,50 @@
                         +38 096 111 11 11
                     </a>
                 </li>  
+               
                 
             </ul>
+            <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#menu_40px"></use>
+                </svg>
+            </button>
+    
+        </div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <nav class="menu-container__nav">
+                <button type="button" class="menu-button-close js-close-menu">
+                    <svg width="40" height="40">
+                        <use class="js-close-menu" href="./images/icons.svg#close_40px"></use>
+                    </svg>
+                </button>
+                <ul class="menu-container__list">
+                    <li class="menu-container__item"><a href="./index.html"class="menu-container__link menu-container__link--current">Студия</a></li>
+                    <li class="menu-container__item"><a href="./portfolio.html" class="menu-container__link">Портфолио</a></li>
+                    <li class="menu-container__item"><a href="" class="menu-container__link">Контакты</a></li>
+                </ul>
+
+            </nav>
+            <ul class="menu-container__contacts">
+                <li class="">
+                    <a href="tel:+380961111111" class="menu-container__tel">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li class="">
+                    <a href="mailto:info@devstudio.com" class="menu-container__mail">
+                        info@devstudio.com
+                    </a>
+                </li>
+            
+            </ul>
+            <ul class="menu-container__social">
+                <li class="menu-container__sosial-item"><a href="" class="menu-container__sosial-link">Instagram</a></li>
+                <li class="menu-container__sosial-item"><a href="" class="menu-container__sosial-link">Twitter</a></li>
+                <li class="menu-container__sosial-item"><a href="" class="menu-container__sosial-link">Facebook</a></li>
+                <li class="menu-container__sosial-item"><a href="" class="menu-container__sosial-link">LinkedIn</a></li>
+            </ul>
+        
         </div>
     </header>
     <!-- Основной контент -->
@@ -132,7 +177,7 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="section-team__list">
                     <li class="item section-team__item">
-                        <img src="./images/team/image-1-s4.jpg" alt="Мужчина в очках" width="270">
+                        <img class="section-team__photo" src="./images/team/image-1-s4.jpg" alt="Мужчина в очках" width="270">
                         <div class="section-team__box">
                             <h3 class="section-team__title">Игорь Демьяненко</h3>
                             <p lang="en" class="section-team__position">Product Designer</p>
@@ -172,7 +217,7 @@
                        
                     </li>
                     <li class="item section-team__item">
-                        <img src="./images/team/image-2-s4.jpg" alt="Женщщина в очках" width="270">
+                        <img class="section-team__photo" src="./images/team/image-2-s4.jpg" alt="Женщщина в очках" width="270">
                         <div class="section-team__box">
                             <h3 class="section-team__title">Ольга Репина</h3>
                             <p lang="en" class="section-team__position">Frontend Developer</p>
@@ -211,7 +256,7 @@
                         </div>
                     </li>
                     <li class="item section-team__item">
-                        <img src="./images/team/image-3-s4.jpg" alt="Мужчина" width="270">
+                        <img class="section-team__photo" src="./images/team/image-3-s4.jpg" alt="Мужчина" width="270">
                         <div class="section-team__box">
                             <h3 class="section-team__title">Николай Тарасов</h3>
                             <p lang="en" class="section-team__position">Marketing</p>
@@ -250,7 +295,7 @@
                         </div>
                     </li>
                     <li class="item section-team__item">
-                        <img src="./images/team/image-4-s4.jpg" alt="Мужчина в очках" width="270">
+                        <img class="section-team__photo" src="./images/team/image-4-s4.jpg" alt="Мужчина в очках" width="270">
                         <div class="section-team__box">
                             <h3 class="section-team__title">Михаил Ермаков</h3>
                             <p lang="en" class="section-team__position">UI Designer</p>
@@ -350,9 +395,9 @@
                 <a href="" class="address-box__logo"> <span class="logo-accent">Web</span>Studio</a>
                 <address>
                     <ul class="address-box__list">
-                        <li><a href="" class="address-box__link">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li><a href="mailto:info@example.com" class="address-box__link address-box__link--transparent">info@example.com</a></li>
-                        <li><a href="+380991111111" class="address-box__link address-box__link--transparent">+38 099 111 11 11</a></li>
+                        <li class="address-box__item"><a href="" class="address-box__link">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="address-box__item"><a href="mailto:info@example.com" class="address-box__link address-box__link--transparent">info@example.com</a></li>
+                        <li class="address-box__item"><a href="+380991111111" class="address-box__link address-box__link--transparent">+38 099 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
@@ -395,8 +440,8 @@
                 <b class="form-subscription__text">Подпишитесь на рассылку</b>
                 <div class="form-subscription__box">
                     <div class="form-subscription__emeil">
-                        <input class="form-subscription__input" type="email" id="subscription">
-                        <label class="form-subscription__label" for="subscription">E-mail</label>
+                        <input class="form-subscription__input" type="email" id="subscription" placeholder="E-mail">
+                        <label class="form-subscription__label" for="subscription"></label>
                     </div>
                     <div>
                         <button class="form-subscription__button" type="submit">
@@ -486,5 +531,9 @@
                 });
             })();
     </script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>

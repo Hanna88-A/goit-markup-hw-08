@@ -1,11 +1,28 @@
 /* Навигация */
 .page-header__nav {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 .site-nav {
   @extend %list;
-  display: flex;
+  display: none;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .site-nav__item:not(:last-child) {

@@ -16,8 +16,15 @@
 }
 .form__field {
   position: relative;
-  display: flex;
-  flex-direction: column;
+
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .form__label {

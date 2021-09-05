@@ -13,13 +13,28 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $white-text;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 .form-subscription__box {
-  display: flex;
+  @media screen and (max-width: 1199px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .form-subscription__emeil {
   position: relative;
-  display: flex;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .form-subscription__label {
@@ -40,7 +55,6 @@
 }
 
 .form-subscription__input {
-  margin-right: 12px;
   padding-left: 16px;
   width: 358px;
   height: 50px;
@@ -55,6 +69,16 @@
 
   &:focus {
     border-color: $accent-color;
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
   }
 }
 
@@ -82,6 +106,10 @@
   &:focus {
     background-color: $primary-button-hover;
     border-color: $primary-button-hover;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
