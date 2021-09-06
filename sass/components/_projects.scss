@@ -44,6 +44,18 @@
 .projects__link {
   text-decoration: none;
 }
+.projects__card {
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
 .projects__box {
   position: relative;
   overflow: hidden;

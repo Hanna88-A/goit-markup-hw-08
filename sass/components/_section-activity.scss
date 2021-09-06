@@ -24,6 +24,15 @@
 
 .section-activity__image {
   display: block;
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .section-activity__box {
@@ -31,8 +40,18 @@
   @include centeredFlex();
   bottom: 0;
   background-color: rgba(47, 48, 58, 0.8);
-  width: 370px;
+
   height: 70px;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 370px;
+  }
 }
 .section-activity__title {
   font-weight: 700;

@@ -9,9 +9,22 @@
   @media screen and (min-width: 480px) {
   }
   @media screen and (min-width: 768px) {
+    display: flex;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
+  }
+}
+.footer-container__box {
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 .address-box {
@@ -42,6 +55,12 @@
 }
 .address-box__list {
   @extend %list;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .address-box__link {
@@ -64,12 +83,7 @@
     display: block;
     text-align: center;
   }
-  @media screen and (min-width: 768px) {
-    display: inline-flex;
-    width: 230px;
-    justify-content: center;
-    margin-left: 76px;
-  }
+
   @media screen and (min-width: 1200px) {
     margin-left: 0;
     justify-content: start;

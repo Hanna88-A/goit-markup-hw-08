@@ -163,7 +163,7 @@
                         </div>
                     </li>
                     <li class="item section-activity__item">
-                        <img class="section-activity__image" src="./images/features/image-3-s3.jpg" alt="Планшет" width="370"> 
+                        <img class="section-activity__image" srcset="" src="./images/features/image-3-s3.jpg" alt="Планшет" width="370"> 
                         <div class="section-activity__box"> 
                             <h3 class="section-activity__title">Дизайнерские решения</h3>
                         </div>
@@ -177,7 +177,7 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="section-team__list">
                     <li class="item section-team__item">
-                        <img class="section-team__photo" src="./images/team/image-1-s4.jpg" alt="Мужчина в очках" width="270">
+                        <img class="section-team__photo" srcset="./images/team/image-1-s4.jpg 1x, ./images/team/image-1-s4-2.jpg 2x," src="./images/team/image-1-s4.jpg" alt="Мужчина в очках" width="270">
                         <div class="section-team__box">
                             <h3 class="section-team__title">Игорь Демьяненко</h3>
                             <p lang="en" class="section-team__position">Product Designer</p>
@@ -390,51 +390,55 @@
     <!-- Подвал сайта -->
     <footer class="footer">
         <div class="container footer-container">
-            
-            <div class="address-box">
-                <a href="" class="address-box__logo"> <span class="logo-accent">Web</span>Studio</a>
-                <address>
-                    <ul class="address-box__list">
-                        <li class="address-box__item"><a href="" class="address-box__link">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li class="address-box__item"><a href="mailto:info@example.com" class="address-box__link address-box__link--transparent">info@example.com</a></li>
-                        <li class="address-box__item"><a href="+380991111111" class="address-box__link address-box__link--transparent">+38 099 111 11 11</a></li>
+            <div class="footer-container__box"> 
+                <div class="address-box">
+                    <a href="" class="address-box__logo"> <span class="logo-accent">Web</span>Studio</a>
+                    <address>
+                        <ul class="address-box__list">
+                            <li class="address-box__item"><a href="" class="address-box__link">г. Киев, пр-т Леси Украинки, 26</a></li>
+                            <li class="address-box__item"><a href="mailto:info@example.com"
+                                    class="address-box__link address-box__link--transparent">info@example.com</a></li>
+                            <li class="address-box__item"><a href="+380991111111"
+                                    class="address-box__link address-box__link--transparent">+38 099 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <!-- Ссылки футера на социальные сети -->
+                <div class="icons-footer">
+                    <b class="icons-footer__text">Присоединяйтесь</b>
+                    <ul class="icons-footer__list">
+                        <li class="icons-footer__item">
+                            <a href="" class="icons-footer__link">
+                                <svg class="icons-footer__icon">
+                                    <use href="./images/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icons-footer__item">
+                            <a href="" class="icons-footer__link">
+                                <svg class="icons-footer__icon">
+                                    <use href="./images/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icons-footer__item">
+                            <a href="" class="icons-footer__link">
+                                <svg class="icons-footer__icon">
+                                    <use href="./images/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icons-footer__item">
+                            <a href="" class="icons-footer__link">
+                                <svg class="icons-footer__icon">
+                                    <use href="./images/icons.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </address>
+                </div>
             </div>
-            <!-- Ссылки футера на социальные сети -->
-            <div class="icons-footer">
-                <b class="icons-footer__text">Присоединяйтесь</b>
-                <ul class="icons-footer__list">
-                    <li class="icons-footer__item">
-                        <a href="" class="icons-footer__link">
-                            <svg class="icons-footer__icon">
-                                <use href="./images/icons.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="icons-footer__item">
-                        <a href="" class="icons-footer__link">
-                            <svg class="icons-footer__icon">
-                                <use href="./images/icons.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="icons-footer__item">
-                        <a href="" class="icons-footer__link">
-                            <svg class="icons-footer__icon">
-                                <use href="./images/icons.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="icons-footer__item">
-                        <a href="" class="icons-footer__link">
-                            <svg class="icons-footer__icon">
-                                <use href="./images/icons.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            
             <!-- Форма подписки -->
             <form class="form-subscription js-speaker-form">
                 <b class="form-subscription__text">Подпишитесь на рассылку</b>

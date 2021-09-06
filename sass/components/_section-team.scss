@@ -39,6 +39,12 @@
 }
 .section-team__photo {
   display: block;
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
 }
 .section-team__box {
   padding-top: 30px;
