@@ -37,10 +37,15 @@
 
 /* Ссылки футера на социальные сети */
 .icons-footer {
-  padding-top: 12px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+  }
 }
 .icons-footer__text {
-  display: block;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -49,8 +54,11 @@
   text-transform: uppercase;
   color: $white-text;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
   }
 }
 .icons-footer__list {
@@ -58,6 +66,9 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
 }
 
 .icons-footer__link {

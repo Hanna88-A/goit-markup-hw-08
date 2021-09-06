@@ -2,13 +2,29 @@
 .buttons-list {
   @extend %list;
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-bottom: 46px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .buttons-list__item:not(:last-child) {
   margin-right: 8px;
 }
+.buttons-list__item:nth-child(-n + 3) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
+
 .buttons-list__filter {
   padding: 6px 22px;
   border: none;
