@@ -7,6 +7,10 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
   @media screen and (min-width: 480px) {
   }
   @media screen and (min-width: 768px) {
@@ -24,6 +28,10 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 .menu-container {
   position: fixed;
@@ -31,19 +39,31 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
   z-index: 999;
   background-color: $primary-bg-color;
   display: none;
 }
+.menu-container__box {
+  width: 100%;
+  height: 100%;
+  padding: 48px 40px;
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .menu-container.is-open {
+  display: flex;
+}
+.menu-container__nav {
+  display: block;
+}
+.menu-container__contacts-social {
   display: block;
 }
 .menu-container__list {
   @extend %list;
-  margin-bottom: 302px;
 }
-.menu-container__item:not(:last-child) {
+.menu-container__item {
   margin-bottom: 32px;
 }
 .menu-container__link {
@@ -60,13 +80,17 @@
     color: $accent-color;
   }
 }
+
 .menu-container__contacts {
+  display: flex;
+  flex-direction: column;
   @extend %list;
 }
+
 .menu-container__tel {
+  display: block;
   @extend %link;
 
-  display: block;
   margin-bottom: 32px;
   font-weight: 500;
   font-size: 34px;
@@ -75,8 +99,9 @@
   color: $accent-color;
 }
 .menu-container__mail {
-  @extend %link;
   display: block;
+  @extend %link;
+
   margin-bottom: 64px;
   font-weight: 500;
   font-size: 24px;
@@ -84,15 +109,21 @@
   letter-spacing: 0.02em;
   color: $primary-text-color;
 }
+
 .menu-container__social {
   @extend %list;
   display: flex;
 }
+
 .menu-container__sosial-item {
   display: block;
+  padding-right: 10px;
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
 
   &:not(:last-child) {
-    margin-right: 20px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
 .menu-container__sosial-link {
