@@ -1053,6 +1053,7 @@ body {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    margin-left: 86px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1094,7 +1095,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-right: 313px;
+    margin-right: 250px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
